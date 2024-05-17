@@ -27,14 +27,14 @@
     PROBLEM 1: Store the h1 text content in a variable "heading" then log heading on the console.
     */
     let heading = document.querySelector('h1').textContent;
-    console.log(heading);
+    console.log('1', heading);
 
     /* 
     PROBLEM 2: Update the variable created in problem 1 by appending an exclamation mark (!) to it. Set the h1 text content to the updated variable.
     */
     let headingUpdate = `${heading}!`;
     heading = headingUpdate;
-    console.log(heading);
+    console.log('2', heading);
 
     /* 
    PROBLEM 3: Create a variable "goodLuckElement" and store the p element containing the "Good luck!" text. 
@@ -46,19 +46,20 @@
         goodLuckElement = p
       };
     })
-    console.log(goodLuckElement);
+    console.log('3', goodLuckElement);
 
     /* 
     PROBLEM 4: Change the text content of goodLuckElement to "Bonne Chance!"
     */
-    //ENTER YOUR CODE HERE
+    goodLuckElement.textContent = "Bonne Chance!";
+    console.log('4', goodLuckElement);
 
     /* 
     PROBLEM 5 (DEBUGGING): The code below is an attempt at printing the password ("myPassword") to the console. Resolve the issue(s) with the code.
     */
     const hiddenText = document.querySelector('#hidden-text');
     const password = hiddenText.textContent; // missing semicolon
-    console.log(password); // missing semicolon
+    console.log('5', password); // missing semicolon
 
   </script>
   <section id="about-solution"
